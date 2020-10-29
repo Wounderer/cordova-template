@@ -1,0 +1,517 @@
+/* iOS Cordova Tweak */
+.device-cordova.device-ios {
+  height: 100vh;
+}
+
+
+:root {
+
+  --f7-navbar-bg-color-rgb: 223, 230, 234, 0.25;
+  --f7-page-bg-color: #F7F8F9;
+  --f7-block-strong-bg-color: white;
+  --f7-theme-color-text-color: #333;
+  --f7-theme-color: #F2F5F7;
+
+  --f7-list-margin-vertical: 15px;
+  --f7-list-media-item-padding-vertical: 25px;
+  --f7-list-item-after-font-size: 18px;
+  --f7-chip-bg-color: #F2F5F7;
+
+  --f7-fab-margin: 16px;
+  --f7-fab-text-color: #fff;
+  --f7-fab-extended-text-font-size: 14px;
+  --f7-fab-extended-text-padding: 0 20px;
+  --f7-fab-extended-size: 40px;
+  --f7-fab-text-color:  #595963;
+  --f7-fab-label-bg-color: #fff;
+  --f7-fab-label-text-color: #595963;
+  --f7-fab-label-border-radius: 4px;
+  --f7-fab-label-padding: 4px 12px;
+  --f7-fab-button-size: 40px;
+  --f7-button-bg-color: #F7F8F9;
+  --f7-button-border-color: 10px;
+
+  --swiper-theme-color: #F2F5F7;
+
+  --f7-chip-height: 30px;
+
+  --f7-chip-font-weight: 500;
+  --f7-chip-font-size: 13px;
+
+  --f7-dialog-button-text-transform: none;
+  --f7-button-large-text-transform: none;
+  --f7-button-large-font-size: 15px;
+  --f7-button-text-color: #595963;
+  --f7-button-fill-text-color: #595963;
+
+  --f7-tabbar-icon-size: 24px;
+  --f7-tabbar-labels-height: 88px;
+  --f7-tabbar-link-inactive-color: #C4CFD7;
+  --f7-tabbar-link-active-color: #595963;
+  --f7-list-item-media-margin: 8px;
+}
+
+.tab-link-primary i.icon {
+  color: #2F80ED !important;
+  font-size:44px !important;
+}
+
+.button-text-blue {
+  color: #2F80ED !important;
+}
+
+.icon-small {
+  font-size:14px;
+  font-weight:bold;
+  margin-right:5px;
+}
+
+.accordion-item {
+  margin: 5px 10px;
+}
+
+.list.accordion-list ul {
+  background: none;
+}
+.tabbar i.icon, .tabbar-labels i.icon {
+  line-height:44px;
+}
+
+.chip {
+  border-radius: 5px;
+}
+
+.fab > a {
+  border-radius:4px;
+}
+
+.text-color-green {
+  color: #46A00E !important;
+}
+.header-block {
+
+}
+
+
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v3/xn7gYHE41ni1AdIRggOxSuXd.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v3/xn7gYHE41ni1AdIRggSxSuXd.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v3/xn7gYHE41ni1AdIRggmxSuXd.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v3/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v3/xn7gYHE41ni1AdIRggOxSuXd.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v3/xn7gYHE41ni1AdIRggSxSuXd.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v3/xn7gYHE41ni1AdIRggmxSuXd.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v3/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v3/xn7gYHE41ni1AdIRggOxSuXd.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v3/xn7gYHE41ni1AdIRggSxSuXd.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v3/xn7gYHE41ni1AdIRggmxSuXd.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v3/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v3/xn7gYHE41ni1AdIRggOxSuXd.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v3/xn7gYHE41ni1AdIRggSxSuXd.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v3/xn7gYHE41ni1AdIRggmxSuXd.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v3/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v3/xn7gYHE41ni1AdIRggOxSuXd.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v3/xn7gYHE41ni1AdIRggSxSuXd.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v3/xn7gYHE41ni1AdIRggmxSuXd.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v3/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+.ios, .md, .aurora {
+  --f7-font-family: -apple-system, system-ui, Helvetica, 'Manrope', sans-serif;
+  --f7-line-height: 1.5;
+  --f7-text-color: #000;
+  --f7-bars-border-color: rgba(0, 0, 0, 0.2);
+}
+
+.header-block h2 {
+  margin:0px;
+  font-size: 2.2em;
+  font-family: 'Manrope', sans-serif;
+}
+
+.header-block-nav {
+  width: 100%;
+  height: 35px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.navbar-inner {
+  overflow: visible !important;
+}
+
+.header-block h2 small {
+  font-size: 0.5em;
+  vertical-align: middle;
+}
+
+.title-head {
+  color: #45454F;
+}
+.subtitle-head {
+  margin: 5px 0px;
+  font-size: 1em;
+  color: #6B7D97;
+}
+.header-tabs {
+  bottom: 0px;
+  position: absolute;
+  margin: 0px 5px;
+  padding: 0px 5px;
+}
+
+.navbar-bg {
+  border-bottom: solid 2px #efefef;
+}
+.page-content {
+  margin-top: 110px;
+}
+
+.header-tabs li a {
+  color: #6B7D97;
+}
+
+.header-tabs li.active {
+  border-bottom: solid 2px black;
+}
+.header-tabs li.active a {
+  color: black;
+
+}
+.header-tabs li {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 0.7em;
+  margin-bottom: -2px;
+  padding-bottom: 7px;
+  color: black;
+  font-weight: bold;
+}
+
+
+.sparkline.green {
+  stroke: rgba(70, 160, 14, 0.6);
+  fill: rgba(70, 160, 14, 0.3);
+}
+
+/* line with highlight area */
+.sparkline {
+  stroke: rgba(224,56,56,.6);
+  fill: rgba(255, 0, 0, .3);
+  border: 0.5px solid #E4E7E9;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.accordion-item-opened > .accordion-item-content, .accordion-item-content {
+  background:transparent;
+}
+.list ul:before, .list ul:after {
+  display:none;
+}
+.accordion-item-opened .item-link, .accordion-item .item-link {
+  background: #F2F5F7;
+  border-color:#CBCDCD;
+  margin: 10px;
+  border-radius: 8px;
+}
+.popup-heading-middle {
+  font-size:17px;
+  text-align:center;
+  margin: 30px 0px;
+}
+
+.chip-color-orange {
+  background: rgba(237, 127, 47,0.1);
+  color: #ca5e10;
+}
+
+.transaction-item .chip {
+  margin: 0px;
+  padding: 10px 15px;
+}
+.popup.coinpopup {
+  background: #F9F9F9;
+  margin-top:50px;
+  padding: 20px;
+  border-radius: 15px;
+}
+.icon-circle-green {
+  background: rgba(70,160,14,0.1);
+  color: #46A00E;
+  border-radius: 100px;
+  font-size: 18px;
+  width: 40px;
+  line-height: 40px;
+  height: 40px;
+}
+
+.transaction-title {
+  color: #45454F !important;
+  font-size:17px !important;
+}
+
+.transaction-item .item-subtitle {
+  font-size: 13px;
+}
+
+.icon-circle-gray {
+  background: rgba(69,69,79,0.1);
+  color: #45454f;
+  border-radius: 100px;
+  font-size: 18px;
+  width: 40px;
+  line-height: 40px;
+  height: 40px;
+}
+
+.demo-swiper .swiper-slide {
+  font-size: 25px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #000;
+}
+.demo-swiper .swiper-slide {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+.demo-swiper {
+  margin: 0px 0 35px;
+  font-size:0.9em;
+  height: 200px;
+}
+
+.demo-swiper .row {
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.demo-swiper .finstats {
+  padding:0px;
+  font-size:0.7em;
+  margin:5px;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide {
+  width: 85%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(2n) {
+  width: 70%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(3n) {
+  width: 30%;
+}
+
+.demo-swiper h3, .demo-swiper h2 {
+  margin:0px;
+  padding: 0px;
+}
+
+
+.text-color-red {
+  color: #E03838 !important;
+}
+.downsign {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid #E03838;
+;
+}
+
+.upsign {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 7px solid #46A00E;
+}
+
+.statusline-chip {
+  line-height: 18px;
+}
+.wallets-list {
+
+}
+
+.list {
+
+  --f7-list-margin-vertical: 10px;
+}
+
+.wallets-list-item {
+
+}
+
+.list.wallets-list  .item-title-row {
+  height:21px;
+
+}
+
+.list.wallets-list  .item-subtitle {
+
+}
