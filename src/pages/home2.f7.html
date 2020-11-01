@@ -1,143 +1,205 @@
 <template>
-  <div class="page" data-name="about">
-    <div class="navbar" style="height:150px">
-      <div class="navbar-bg"></div>
-      <div class="navbar-inner sliding header-block" style="justify-content:space-between; align-items: flex-start;padding: 10px;">
-        <div class="left" style="display: flow-root">
-          <h2><small>$</small>17,783</h2>
-          <div class="subtitle-head"><span class="text-color-green">+$728 (24%)</span> 24 hrs</div>
-        </div>
-        <div class="right">
-          <div class="chip"style="background:#c4cfd79c">
-            <div class="chip-label">
-              <svg style="margin-top: 10px;margin-right: 2px;" width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4.05191 13.605C5.07128 14.1935 6.35685 13.8372 6.95935 12.8259L3.27287 10.6975C2.6983 11.725 3.03255 13.0164 4.05191 13.605Z" fill="#6B7D97"/>
-                <path d="M11.6977 12.0054L11.6292 9.41516C11.6192 8.98112 11.731 8.56163 11.9487 8.1846L12.3921 7.41658C13.3193 5.81073 13.1545 3.74202 11.8985 2.40244L12.1484 1.96956C12.4789 1.39704 12.2842 0.670181 11.7116 0.339636C11.1391 0.00909016 10.4123 0.203851 10.0817 0.776373L9.8318 1.20926C8.1076 0.809583 6.25035 1.5433 5.32321 3.14916L4.79917 4.05681C4.5815 4.43384 4.27414 4.74047 3.89321 4.94877L1.61574 6.18461C1.1827 6.41868 0.910749 6.85747 0.902532 7.35543C0.894314 7.85338 1.15631 8.30255 1.57523 8.54441L9.64639 13.2043C10.0793 13.4542 10.5853 13.4485 11.0124 13.1924C11.4535 12.9443 11.7115 12.4975 11.6977 12.0054Z" fill="#6B7D97"/>
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="header-block-nav">
-          <ul class="header-tabs">
-            <li ><a href="#view-home" class="tab-link">Wallets</a></li>
-            <li class="active"> <a href="#view-home2" class="tab-link">Activity</a></li>
-            <li><a href="#">Market</a></li>
-
-            <li><a href="#">News</a></li>
-            <li><a href="#">Add token</a></li>
-          </ul>
-        </div>
-
-      </div>
-
-    </div>
+  <div class="page" data-name="home2"  style="padding-bottom: 130px;">
     <div class="fab fab-extended fab-center-bottom">
       <a href="#">
-        <i class="icon f7-icons">gear</i>
-
-        <div class="fab-text " >Filters</div>
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 9C0 8.7613 0.0948211 8.53239 0.263604 8.3636C0.432387 8.19482 0.661305 8.1 0.9 8.1H2.7V9.9H0.9C0.661305 9.9 0.432387 9.80518 0.263604 9.6364C0.0948211 9.46761 0 9.23869 0 9ZM0.9 3.6H9.9V1.8H0.9C0.661305 1.8 0.432387 1.89482 0.263604 2.0636C0.0948211 2.23239 0 2.46131 0 2.7C0 2.93869 0.0948211 3.16761 0.263604 3.3364C0.432387 3.50518 0.661305 3.6 0.9 3.6ZM18 2.7C18 2.46131 17.9052 2.23239 17.7364 2.0636C17.5676 1.89482 17.3387 1.8 17.1 1.8V3.6C17.3387 3.6 17.5676 3.50518 17.7364 3.3364C17.9052 3.16761 18 2.93869 18 2.7ZM12.6 5.4H14.4C14.8774 5.4 15.3352 5.21036 15.6728 4.87279C16.0104 4.53523 16.2 4.07739 16.2 3.6V1.8C16.2 1.32261 16.0104 0.864773 15.6728 0.527208C15.3352 0.189642 14.8774 0 14.4 0H12.6C12.1226 0 11.6648 0.189642 11.3272 0.527208C10.9896 0.864773 10.8 1.32261 10.8 1.8V3.6C10.8 4.07739 10.9896 4.53523 11.3272 4.87279C11.6648 5.21036 12.1226 5.4 12.6 5.4ZM0 15.3C0 15.5387 0.0948211 15.7676 0.263604 15.9364C0.432387 16.1052 0.661305 16.2 0.9 16.2H8.1V14.4H0.9C0.661305 14.4 0.432387 14.4948 0.263604 14.6636C0.0948211 14.8324 0 15.0613 0 15.3ZM17.1 8.1H9.9V9.9H17.1C17.3387 9.9 17.5676 9.80518 17.7364 9.6364C17.9052 9.46761 18 9.23869 18 9C18 8.7613 17.9052 8.53239 17.7364 8.3636C17.5676 8.19482 17.3387 8.1 17.1 8.1ZM17.1 14.4H15.3V16.2H17.1C17.3387 16.2 17.5676 16.1052 17.7364 15.9364C17.9052 15.7676 18 15.5387 18 15.3C18 15.0613 17.9052 14.8324 17.7364 14.6636C17.5676 14.4948 17.3387 14.4 17.1 14.4ZM12.6 12.6H10.8C10.3226 12.6 9.86477 12.7896 9.52721 13.1272C9.18964 13.4648 9 13.9226 9 14.4V16.2C9 16.6774 9.18964 17.1352 9.52721 17.4728C9.86477 17.8104 10.3226 18 10.8 18H12.6C13.0774 18 13.5352 17.8104 13.8728 17.4728C14.2104 17.1352 14.4 16.6774 14.4 16.2V14.4C14.4 13.9226 14.2104 13.4648 13.8728 13.1272C13.5352 12.7896 13.0774 12.6 12.6 12.6ZM9 8.1C9 7.62261 8.81036 7.16477 8.47279 6.82721C8.13523 6.48964 7.67739 6.3 7.2 6.3H5.4C4.92261 6.3 4.46477 6.48964 4.12721 6.82721C3.78964 7.16477 3.6 7.62261 3.6 8.1V9.9C3.6 10.3774 3.78964 10.8352 4.12721 11.1728C4.46477 11.5104 4.92261 11.7 5.4 11.7H7.2C7.67739 11.7 8.13523 11.5104 8.47279 11.1728C8.81036 10.8352 9 10.3774 9 9.9V8.1Z" fill="#45454F"/>
+        </svg> Filters
       </a>
     </div>
     <div class="page-content">
+      <div class="block-strong" style="padding:0px">
+        <div class="block-title">Today</div>
+        <div class="list media-list transactions-list">
+          <ul>
+            {{#each transactions}}
+            <li>
+              <div class="item-content transaction-item">
+                <div class="item-media">
+                  {{#js_if 'parseInt(this.type)===0'}}
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="20" fill="#45454F" fill-opacity="0.1"/>
+                    <path d="M21.1381 25.0001C21.1381 25.4971 20.7352 25.9001 20.2381 25.9001C19.741 25.9001 19.3381 25.4971 19.3381 25.0001H21.1381ZM20.2381 12.5L19.5864 11.8793C19.7614 11.6956 20.0058 11.5942 20.2594 11.6003C20.5131 11.6063 20.7524 11.7191 20.9185 11.9109L20.2381 12.5ZM25.6804 17.4109C26.0058 17.7867 25.9649 18.3551 25.5891 18.6804C25.2133 19.0058 24.6449 18.9649 24.3196 18.5891L25.6804 17.4109ZM15.6517 18.6207C15.3089 18.9806 14.7392 18.9945 14.3793 18.6517C14.0194 18.3089 14.0055 17.7392 14.3483 17.3793L15.6517 18.6207ZM15 28.9C14.5029 28.9 14.1 28.4971 14.1 28C14.1 27.5029 14.5029 27.1 15 27.1V28.9ZM25 27.1C25.4971 27.1 25.9 27.5029 25.9 28C25.9 28.4971 25.4971 28.9 25 28.9V27.1ZM19.3381 25.0001V12.5H21.1381V25.0001H19.3381ZM20.9185 11.9109L25.6804 17.4109L24.3196 18.5891L19.5577 13.0891L20.9185 11.9109ZM20.8898 13.1207L15.6517 18.6207L14.3483 17.3793L19.5864 11.8793L20.8898 13.1207ZM15 27.1H25V28.9H15V27.1Z" fill="#717172"/>
+                  </svg>
+                  {{else}}
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="20" fill="#46A00E" fill-opacity="0.1"/>
+                    <path d="M21.1381 12C21.1381 11.5029 20.7352 11.1 20.2381 11.1C19.741 11.1 19.3381 11.5029 19.3381 12H21.1381ZM20.2381 24.5001L19.5864 25.1207C19.7614 25.3045 20.0058 25.4058 20.2594 25.3998C20.5131 25.3938 20.7524 25.281 20.9185 25.0892L20.2381 24.5001ZM25.6804 19.5892C26.0058 19.2134 25.9649 18.645 25.5891 18.3196C25.2133 17.9943 24.6449 18.0352 24.3196 18.411L25.6804 19.5892ZM15.6517 18.3794C15.3089 18.0194 14.7392 18.0055 14.3793 18.3483C14.0194 18.6911 14.0055 19.2608 14.3483 19.6207L15.6517 18.3794ZM15 27.1001C14.5029 27.1001 14.1 27.503 14.1 28.0001C14.1 28.4971 14.5029 28.9001 15 28.9001V27.1001ZM25 28.9001C25.4971 28.9001 25.9 28.4971 25.9 28.0001C25.9 27.503 25.4971 27.1001 25 27.1001V28.9001ZM19.3381 12V24.5001H21.1381V12H19.3381ZM20.9185 25.0892L25.6804 19.5892L24.3196 18.411L19.5577 23.911L20.9185 25.0892ZM20.8898 23.8794L15.6517 18.3794L14.3483 19.6207L19.5864 25.1207L20.8898 23.8794ZM15 28.9001H25V27.1001H15V28.9001Z" fill="#46A00E"/>
+                  </svg>
+                  {{/js_if}}
 
-      <div class="block-title">Today</div>
-      <div class="list media-list">
-        <ul>
-          <li>
-            <div class="item-content transaction-item">
-              <div class="item-media">
-                <i class="icon f7-icons icon-circle-green">arrow_down_to_line</i>
-              </div>
-              <div class="item-inner">
-                <div class="item-title-row">
-                  <div class="item-title transaction-title">Fox Exchange</div>
-                  <div class="item-after text-color-green">+6.8826371 BTC</div>
                 </div>
-                <div class="item-title-row">
-                  <div class="item-subtitle">4:02 PM</div>
-                  <div class="item-after text-color-gray" style="font-size:0.75em">70,211 USD</div>
-                </div>
-                <div class="item-subtitle">
-                  <div class="chip">
-                    <div class="chip-media" style="height:18px; width:18px;">
-                      <i class="icon f7-icons color-gray" style="font-size:18px;line-height: 22px;">checkmark_circle_fill</i>
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title transaction-title">{{target}}</div>
+                    {{#js_if 'parseInt(this.type)===0'}}
+                      <div class="item-after">-{{amount}} {{coin}}</div>
+                    {{else}}
+                      <div class="item-after text-color-green">+{{amount}} {{coin}}</div>
+                    {{/js_if}}
 
-                    </div>
-                    <div class="chip-label">4:29 PM</div>
                   </div>
-
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="item-content transaction-item">
-              <div class="item-media">
-                <i class="icon f7-icons icon-circle-gray">arrow_up_to_line</i>
-              </div>
-              <div class="item-inner">
-                <div class="item-title-row">
-                  <div class="item-title transaction-title">1Ddg322hg4245hjg23423hj4g2342h342u3g4234gkj</div>
-                  <div class="item-after text-color-gray">-2.371 LSK</div>
-                </div>
-                <div class="item-title-row">
-                  <div class="item-subtitle">1:02 PM</div>
-                  <div class="item-after text-color-gray" style="font-size:0.75em">7021.00 USD</div>
-                </div>
-                <div class="item-subtitle">
-                  <div class="chip chip-color-orange">
-                    <div class="chip-media chip-color-orange" style="height:18px; width:18px;">
-                      <i class="icon f7-icons" style="font-size:18px;line-height: 22px;">clock_fill</i>
-
-                    </div>
-                    <div class="chip-label">1/8 confirmations</div>
+                  <div class="item-title-row subrow">
+                    <div class="item-subtitle">{{created_at}}</div>
+                    <div class="item-after">{{amount_usd}} USD</div>
                   </div>
-
+                  <div class="item-subtitle">
+                    {{#js_if 'parseInt( this.confirms_current ) < parseInt( this.confirms_required)'}}
+                    <div class="transaction-status color-orange">
+                      <div class="transaction-status-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.9998 0C3.58183 0 0 3.58183 0 8.0002C0 12.4182 3.58183 16 7.9998 16C12.4182 16 16 12.4182 16 8.0002C16 3.58183 12.4182 0 7.9998 0ZM11.969 11.518L7.36741 9.21801C7.04959 9.09438 6.82449 8.7855 6.82449 8.42457V4.80797C6.82449 4.33785 7.20596 3.95638 7.67588 3.95638C8.146 3.95638 8.52746 4.33785 8.52746 4.80797V7.90199L12.727 10.0011C13.1457 10.2101 13.3155 10.7201 13.1065 11.1386C12.8974 11.557 12.3875 11.727 11.969 11.518Z" fill="#DE7224"/>
+                      </svg>
+                      </div>
+                      <div class="transaction-status-text">{{confirms_current}}/{{confirms_required}} confirmations</div>
+                    </div>
+                    {{else}}
+                    <div class="transaction-status">
+                      <div class="transaction-status-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8Z" fill="#4F4F59"/>
+                        <path d="M12.0489 6.01112C12.3311 5.70799 12.3143 5.23342 12.0111 4.95113C11.708 4.66884 11.2334 4.68574 10.9511 4.98887L12.0489 6.01112ZM6.84375 10.5L6.2966 11.0129C6.43868 11.1645 6.63726 11.2503 6.845 11.25C7.05274 11.2496 7.25103 11.1631 7.39261 11.0111L6.84375 10.5ZM5.04715 7.48704C4.76386 7.18485 4.28923 7.16954 3.98704 7.45284C3.68486 7.73614 3.66955 8.21076 3.95285 8.51295L5.04715 7.48704ZM10.9511 4.98887L6.29489 9.98886L7.39261 11.0111L12.0489 6.01112L10.9511 4.98887ZM7.3909 9.98704L5.04715 7.48704L3.95285 8.51295L6.2966 11.0129L7.3909 9.98704Z" fill="white"/>
+                      </svg></div>
+                      <div class="transaction-status-text">{{completed_at}}</div>
+                    </div>
+                    {{/js_if}}
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
       </div>
-      <div class="block-title">June, 22. 2020</div>
-      <div class="list media-list">
-        <ul>
-          <li>
-            <div class="item-content transaction-item">
-              <div class="item-media">
-                <i class="icon f7-icons icon-circle-gray">arrow_up_to_line</i>
-              </div>
-              <div class="item-inner">
-                <div class="item-title-row">
-                  <div class="item-title transaction-title">Binance</div>
-                  <div class="item-after text-color-green">+9.876 HTC</div>
-                </div>
-                <div class="item-title-row">
-                  <div class="item-subtitle">4:02 PM</div>
-                  <div class="item-after text-color-gray" style="font-size:0.75em">70,211 USD</div>
-                </div>
-                <div class="item-subtitle">
-                  <div class="chip">
-                    <div class="chip-media" style="height:18px; width:18px;">
-                      <i class="icon f7-icons color-gray" style="font-size:18px;line-height: 22px;">checkmark_circle_fill</i>
+      <div class="block-strong" style="padding:0px">
+        <div class="block-title">June, 22. 2020</div>
+        <div class="list media-list transactions-list">
+          <ul>
+            {{#each transactions}}
+            <li>
+              <div class="item-content transaction-item">
+                <div class="item-media">
+                  {{#js_if 'parseInt(this.type)===0'}}
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="20" fill="#45454F" fill-opacity="0.1"/>
+                    <path d="M21.1381 25.0001C21.1381 25.4971 20.7352 25.9001 20.2381 25.9001C19.741 25.9001 19.3381 25.4971 19.3381 25.0001H21.1381ZM20.2381 12.5L19.5864 11.8793C19.7614 11.6956 20.0058 11.5942 20.2594 11.6003C20.5131 11.6063 20.7524 11.7191 20.9185 11.9109L20.2381 12.5ZM25.6804 17.4109C26.0058 17.7867 25.9649 18.3551 25.5891 18.6804C25.2133 19.0058 24.6449 18.9649 24.3196 18.5891L25.6804 17.4109ZM15.6517 18.6207C15.3089 18.9806 14.7392 18.9945 14.3793 18.6517C14.0194 18.3089 14.0055 17.7392 14.3483 17.3793L15.6517 18.6207ZM15 28.9C14.5029 28.9 14.1 28.4971 14.1 28C14.1 27.5029 14.5029 27.1 15 27.1V28.9ZM25 27.1C25.4971 27.1 25.9 27.5029 25.9 28C25.9 28.4971 25.4971 28.9 25 28.9V27.1ZM19.3381 25.0001V12.5H21.1381V25.0001H19.3381ZM20.9185 11.9109L25.6804 17.4109L24.3196 18.5891L19.5577 13.0891L20.9185 11.9109ZM20.8898 13.1207L15.6517 18.6207L14.3483 17.3793L19.5864 11.8793L20.8898 13.1207ZM15 27.1H25V28.9H15V27.1Z" fill="#717172"/>
+                  </svg>
+                  {{else}}
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="20" fill="#46A00E" fill-opacity="0.1"/>
+                    <path d="M21.1381 12C21.1381 11.5029 20.7352 11.1 20.2381 11.1C19.741 11.1 19.3381 11.5029 19.3381 12H21.1381ZM20.2381 24.5001L19.5864 25.1207C19.7614 25.3045 20.0058 25.4058 20.2594 25.3998C20.5131 25.3938 20.7524 25.281 20.9185 25.0892L20.2381 24.5001ZM25.6804 19.5892C26.0058 19.2134 25.9649 18.645 25.5891 18.3196C25.2133 17.9943 24.6449 18.0352 24.3196 18.411L25.6804 19.5892ZM15.6517 18.3794C15.3089 18.0194 14.7392 18.0055 14.3793 18.3483C14.0194 18.6911 14.0055 19.2608 14.3483 19.6207L15.6517 18.3794ZM15 27.1001C14.5029 27.1001 14.1 27.503 14.1 28.0001C14.1 28.4971 14.5029 28.9001 15 28.9001V27.1001ZM25 28.9001C25.4971 28.9001 25.9 28.4971 25.9 28.0001C25.9 27.503 25.4971 27.1001 25 27.1001V28.9001ZM19.3381 12V24.5001H21.1381V12H19.3381ZM20.9185 25.0892L25.6804 19.5892L24.3196 18.411L19.5577 23.911L20.9185 25.0892ZM20.8898 23.8794L15.6517 18.3794L14.3483 19.6207L19.5864 25.1207L20.8898 23.8794ZM15 28.9001H25V27.1001H15V28.9001Z" fill="#46A00E"/>
+                  </svg>
+                  {{/js_if}}
 
-                    </div>
-                    <div class="chip-label">4:29 PM</div>
+                </div>
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title transaction-title">{{target}}</div>
+                    {{#js_if 'parseInt(this.type)===0'}}
+                    <div class="item-after text-color-gray">-{{amount}} {{coin}}</div>
+                    {{else}}
+                    <div class="item-after text-color-green">+{{amount}} {{coin}}</div>
+                    {{/js_if}}
+
                   </div>
-
+                  <div class="item-title-row subrow">
+                    <div class="item-subtitle">4:02 PM</div>
+                    <div class="item-after text-color-gray">70,211 USD</div>
+                  </div>
+                  <div class="item-subtitle">
+                    {{#js_if 'parseInt( this.confirms_current ) < parseInt( this.confirms_required)'}}
+                    <div class="transaction-status color-orange">
+                      <div class="transaction-status-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.9998 0C3.58183 0 0 3.58183 0 8.0002C0 12.4182 3.58183 16 7.9998 16C12.4182 16 16 12.4182 16 8.0002C16 3.58183 12.4182 0 7.9998 0ZM11.969 11.518L7.36741 9.21801C7.04959 9.09438 6.82449 8.7855 6.82449 8.42457V4.80797C6.82449 4.33785 7.20596 3.95638 7.67588 3.95638C8.146 3.95638 8.52746 4.33785 8.52746 4.80797V7.90199L12.727 10.0011C13.1457 10.2101 13.3155 10.7201 13.1065 11.1386C12.8974 11.557 12.3875 11.727 11.969 11.518Z" fill="#DE7224"/>
+                      </svg>
+                      </div>
+                      <div class="transaction-status-text">{{confirms_current}}/{{confirms_required}} confirmations</div>
+                    </div>
+                    {{else}}
+                    <div class="transaction-status">
+                      <div class="transaction-status-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8Z" fill="#4F4F59"/>
+                        <path d="M12.0489 6.01112C12.3311 5.70799 12.3143 5.23342 12.0111 4.95113C11.708 4.66884 11.2334 4.68574 10.9511 4.98887L12.0489 6.01112ZM6.84375 10.5L6.2966 11.0129C6.43868 11.1645 6.63726 11.2503 6.845 11.25C7.05274 11.2496 7.25103 11.1631 7.39261 11.0111L6.84375 10.5ZM5.04715 7.48704C4.76386 7.18485 4.28923 7.16954 3.98704 7.45284C3.68486 7.73614 3.66955 8.21076 3.95285 8.51295L5.04715 7.48704ZM10.9511 4.98887L6.29489 9.98886L7.39261 11.0111L12.0489 6.01112L10.9511 4.98887ZM7.3909 9.98704L5.04715 7.48704L3.95285 8.51295L6.2966 11.0129L7.3909 9.98704Z" fill="white"/>
+                      </svg></div>
+                      <div class="transaction-status-text">{{completed_at}}</div>
+                    </div>
+                    {{/js_if}}
+                  </div>
                 </div>
-                <div class="item-subtitle">4:29 PM</div>
               </div>
-            </div>
-          </li>
+            </li>
+            {{/each}}
 
 
-        </ul>
+          </ul>
+        </div>
       </div>
-
     </div>
   </div>
 </template>
 <script>
-  export default {};
+  function start_and_end(str) {
+    if (str.length > 20) {
+      return str.substr(0, 4) + '...' + str.substr(str.length-4, str.length);
+    }
+    return str;
+  }
+    export default {
+      data: function () {
+        return {
+          transactions: [{
+            target: "SHTC",
+            coin: "BTC",
+            amount: "6.67112321",
+            type: 1,
+            completed_at: "4:29 AM",
+            confirms_current: 8,
+            confirms_required: 8,
+            amount_usd: "70,211",
+            created_at: "4:02 PM",
+          }, {
+            target: start_and_end("3AVGrtjstyktyjktyjSFHJEtjyfjfyjgyjgyj"),
+            coin: "LSK",
+            amount: "2.21",
+            amount_usd: "987",
+            type: 0,
+            created_at: "1:22 PM",
+            completed_at: "4:29 AM",
+            confirms_current: 1,
+            confirms_required: 8,
+          },{
+            target: "SHTC",
+            coin: "BTC",
+            amount: "6.67112321",
+            type: 1,
+            completed_at: "4:29 AM",
+            confirms_current: 8,
+            confirms_required: 8,
+            amount_usd: "70,211",
+            created_at: "4:02 PM",
+          }, {
+            target: start_and_end("3AVGrtjstyktyjktyjSFHJEtjyfjfyjgyjgyj"),
+            coin: "LSK",
+            amount: "2.21",
+            amount_usd: "987",
+            type: 0,
+            created_at: "1:22 PM",
+            completed_at: "4:29 AM",
+            confirms_current: 1,
+            confirms_required: 8,
+          }
+          ]
+        }
+      },
+
+      methods:{
+
+      },
+      on: {
+        pageAfterIn: function( e, g) {
+        },
+        pageInit: function(e,p) {
+
+        }
+      }
+
+  };
 </script>

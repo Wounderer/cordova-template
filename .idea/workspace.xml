@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89560d17-7c3a-48e9-990d-bda50fa5a555" name="Default Changelist" comment="" />
+    <list default="true" id="89560d17-7c3a-48e9-990d-bda50fa5a555" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.apk" beforeDir="false" afterPath="$PROJECT_DIR$/output.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.f7.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.f7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home.f7.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.f7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home2.f7.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home2.f7.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +25,11 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1jVW6T6Vy39JHfLFGpvgZgbqomV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -19,6 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -28,7 +48,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603889563893</updated>
-      <workItem from="1603889564920" duration="41575000" />
+      <workItem from="1603889564920" duration="42305000" />
+      <workItem from="1604162426378" duration="35562000" />
     </task>
     <servers />
   </component>
@@ -44,13 +65,17 @@
       <screen x="72" y="27" width="2088" height="1413" />
     </state>
     <state x="849" y="482" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/72.27.2088.1413@72.27.2088.1413" timestamp="1604006475732" />
-    <state x="780" y="342" key="run.anything.popup" timestamp="1603895342866">
+    <state x="806" y="431" width="620" height="604" key="find.popup" timestamp="1604188573986">
       <screen x="72" y="27" width="2088" height="1413" />
     </state>
-    <state x="780" y="342" key="run.anything.popup/72.27.2088.1413@72.27.2088.1413" timestamp="1603895342866" />
-    <state x="779" y="349" width="672" height="678" key="search.everywhere.popup" timestamp="1603908833565">
+    <state x="806" y="431" width="620" height="604" key="find.popup/72.27.2088.1413@72.27.2088.1413" timestamp="1604188573986" />
+    <state x="780" y="342" key="run.anything.popup" timestamp="1604195304762">
       <screen x="72" y="27" width="2088" height="1413" />
     </state>
-    <state x="779" y="349" width="672" height="678" key="search.everywhere.popup/72.27.2088.1413@72.27.2088.1413" timestamp="1603908833565" />
+    <state x="780" y="342" key="run.anything.popup/72.27.2088.1413@72.27.2088.1413" timestamp="1604195304762" />
+    <state x="779" y="349" width="672" height="678" key="search.everywhere.popup" timestamp="1604194731319">
+      <screen x="72" y="27" width="2088" height="1413" />
+    </state>
+    <state x="779" y="349" width="672" height="678" key="search.everywhere.popup/72.27.2088.1413@72.27.2088.1413" timestamp="1604194731319" />
   </component>
 </project>

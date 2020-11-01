@@ -1,109 +1,123 @@
-
 <template>
   <div id="app">
-
     <!-- Views/Tabs container -->
     <div class="views tabs safe-areas">
       <!-- Tabbar for switching views-tabs -->
       <div class="toolbar toolbar-bottom tabbar-labels">
         <div class="toolbar-inner">
-          <a href="#view-catalog" class="tab-link  tab-link-active">
-            <i class="icon f7-icons">house_fill</i>
+          <a href="#view-home" class="tab-link tab-link-active">
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path d="M22.7314 12.3519L12.6481 2.26857C12.4762 2.09672 12.2431 2.00018 12 2.00018C11.757 2.00018 11.5238 2.09672 11.3519 2.26857L1.2686 12.3519C1.14044 12.4801 1.05317 12.6434 1.01782 12.8212C0.982463 12.999 1.00062 13.1833 1.06998 13.3508C1.13934 13.5182 1.25681 13.6614 1.40751 13.7621C1.55822 13.8628 1.73541 13.9166 1.91669 13.9167H3.06252C3.1233 13.9167 3.18159 13.9408 3.22456 13.9838C3.26754 14.0268 3.29169 14.085 3.29169 14.1458V23.0833C3.29169 23.3264 3.38826 23.5596 3.56017 23.7315C3.73208 23.9034 3.96524 24 4.20835 24H9.47919C9.53996 24 9.59825 23.9758 9.64123 23.9329C9.68421 23.8899 9.70835 23.8316 9.70835 23.7708V19.4167C9.70835 18.8089 9.9498 18.226 10.3796 17.7962C10.8093 17.3664 11.3922 17.125 12 17.125C12.6078 17.125 13.1907 17.3664 13.6205 17.7962C14.0502 18.226 14.2917 18.8089 14.2917 19.4167V23.7708C14.2917 23.8316 14.3158 23.8899 14.3588 23.9329C14.4018 23.9758 14.4601 24 14.5209 24H19.7917C20.0348 24 20.268 23.9034 20.4399 23.7315C20.6118 23.5596 20.7084 23.3264 20.7084 23.0833V14.1458C20.7084 14.085 20.7325 14.0268 20.7755 13.9838C20.8185 13.9408 20.8767 13.9167 20.9375 13.9167H22.0834C22.2646 13.9166 22.4418 13.8628 22.5925 13.7621C22.7432 13.6614 22.8607 13.5182 22.9301 13.3508C22.9994 13.1833 23.0176 12.999 22.9822 12.8212C22.9469 12.6434 22.8596 12.4801 22.7314 12.3519Z" fill="#343F51"/>
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="22" height="22" fill="white" transform="translate(1 2)"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="#view-home2" class="tab-link">
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 3.8432C11.55 3.8432 11.25 3.65104 11.25 3.3628V0.4804C11.25 0.19216 11.55 0 12 0C12.45 0 12.75 0.19216 12.75 0.4804V3.3628C12.75 3.65104 12.45 3.8432 12 3.8432Z" fill="#DFE6EA"/>
+              <path d="M3.25 24C2.8 24 2.5 23.8079 2.5 23.5196V18.7156C2.5 18.4274 2.8 18.2352 3.25 18.2352C3.7 18.2352 4 18.4274 4 18.7156V23.5196C4 23.8079 3.7 24 3.25 24Z" fill="#DFE6EA"/>
+              <path d="M12 22.1985C11.55 22.1985 11.25 22.0063 11.25 21.7181V14.9925C11.25 14.7042 11.55 14.5121 12 14.5121C12.45 14.5121 12.75 14.7042 12.75 14.9925V21.7181C12.75 22.0063 12.45 22.1985 12 22.1985Z" fill="#DFE6EA"/>
+              <path d="M3.25 9.48793C2.8 9.48793 2.5 9.29577 2.5 9.00753V7.08592C2.5 6.79768 2.8 6.60552 3.25 6.60552C3.7 6.60552 4 6.79768 4 7.08592V9.00753C4 9.29577 3.7 9.48793 3.25 9.48793Z" fill="#DFE6EA"/>
+              <path d="M20.75 12.4904C20.3 12.4904 20 12.2983 20 12.01V5.28443C20 4.99619 20.3 4.80403 20.75 4.80403C21.2 4.80403 21.5 4.99619 21.5 5.28443V12.01C21.5 12.2983 21.2 12.4904 20.75 12.4904Z" fill="#DFE6EA"/>
+              <path d="M20.75 24C20.3 24 20 23.8079 20 23.5196V21.598C20 21.3098 20.3 21.1176 20.75 21.1176C21.2 21.1176 21.5 21.3098 21.5 21.598V23.5196C21.5 23.8079 21.2 24 20.75 24Z" fill="#DFE6EA"/>
+              <path d="M5.27999 19.216H1.43999C1.15199 19.216 0.959991 19.0239 0.959991 18.7356V9.12762C0.959991 8.83938 1.15199 8.64722 1.43999 8.64722H5.27999C5.56799 8.64722 5.75999 8.83938 5.75999 9.12762V18.7356C5.75999 19.0239 5.56799 19.216 5.27999 19.216ZM1.91999 18.2552H4.79999V9.60802H1.91999V18.2552Z" fill="#C4CFD7"/>
+              <path d="M1.91999 18.2552H4.79999V9.60802H1.91999V18.2552Z" fill="#C4CFD7"/>
+              <path d="M13.92 15.3729H10.08C9.79201 15.3729 9.60001 15.1807 9.60001 14.8925V3.36285C9.60001 3.07461 9.79201 2.88245 10.08 2.88245H13.92C14.208 2.88245 14.4 3.07461 14.4 3.36285V14.8925C14.4 15.1807 14.208 15.3729 13.92 15.3729ZM10.56 14.4121H13.44V3.84325H10.56V14.4121Z" fill="#C4CFD7"/>
+              <path d="M10.56 14.4121H13.44V3.84325H10.56V14.4121Z" fill="#C4CFD7"/>
+              <path d="M22.56 22.0984H18.72C18.432 22.0984 18.24 21.9063 18.24 21.618V12.01C18.24 11.7218 18.432 11.5296 18.72 11.5296H22.56C22.848 11.5296 23.04 11.7218 23.04 12.01V21.618C23.04 21.9063 22.848 22.0984 22.56 22.0984ZM19.2 21.1376H22.08V12.4904H19.2V21.1376Z" fill="#C4CFD7"/>
+              <path d="M19.2 21.1376H22.08V12.4904H19.2V21.1376Z" fill="#C4CFD7"/>
+              <path d="M23.52 12.4896H17.76C17.472 12.4896 17.28 12.2976 17.28 12.0096C17.28 11.7216 17.472 11.5296 17.76 11.5296H23.52C23.808 11.5296 24 11.7216 24 12.0096C24 12.2976 23.808 12.4896 23.52 12.4896Z" fill="#C4CFD7"/>
+              <path d="M14.88 3.84245H9.12001C8.83201 3.84245 8.64001 3.65045 8.64001 3.36245C8.64001 3.07445 8.83201 2.88245 9.12001 2.88245H14.88C15.168 2.88245 15.36 3.07445 15.36 3.36245C15.36 3.65045 15.168 3.84245 14.88 3.84245Z" fill="#C4CFD7"/>
+              <path d="M6.24 9.60722H0.48C0.192 9.60722 0 9.41522 0 9.12722C0 8.83922 0.192 8.64722 0.48 8.64722H6.24C6.528 8.64722 6.72 8.83922 6.72 9.12722C6.72 9.41522 6.528 9.60722 6.24 9.60722Z" fill="#C4CFD7"/>
+              <path d="M23.52 22.0976H17.76C17.472 22.0976 17.28 21.9056 17.28 21.6176C17.28 21.3296 17.472 21.1376 17.76 21.1376H23.52C23.808 21.1376 24 21.3296 24 21.6176C24 21.9056 23.808 22.0976 23.52 22.0976Z" fill="#C4CFD7"/>
+              <path d="M14.88 15.372H9.12001C8.83201 15.372 8.64001 15.18 8.64001 14.892C8.64001 14.604 8.83201 14.412 9.12001 14.412H14.88C15.168 14.412 15.36 14.604 15.36 14.892C15.36 15.18 15.168 15.372 14.88 15.372Z" fill="#C4CFD7"/>
+              <path d="M6.24 19.2152H0.48C0.192 19.2152 0 19.0232 0 18.7352C0 18.4472 0.192 18.2552 0.48 18.2552H6.24C6.528 18.2552 6.72 18.4472 6.72 18.7352C6.72 19.0232 6.528 19.2152 6.24 19.2152Z" fill="#C4CFD7"/>
+            </svg>
 
           </a>
-          <a href="#view-settings" class="tab-link">
-            <i class="icon f7-icons">gear</i>
-
           <a href="#view-home" class="tab-link tab-link-primary">
-            <i class="icon f7-icons" style="font-size: 44px">arrow_right_arrow_left_circle_fill</i>
+            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="23" cy="23" r="23" fill="#2F80ED"/>
+              <path d="M17.8379 24.4919C17.9716 24.4282 18.0846 24.328 18.1638 24.2029C18.243 24.0778 18.2853 23.9328 18.2857 23.7847L18.2857 21.4276L24.5714 21.4276C24.7798 21.4276 24.9797 21.3448 25.127 21.1975C25.2744 21.0501 25.3571 20.8503 25.3571 20.6419L25.3571 19.0705C25.3571 18.8621 25.2744 18.6622 25.127 18.5149C24.9797 18.3675 24.7798 18.2847 24.5714 18.2847L18.2857 18.2847L18.2857 15.9276C18.2855 15.7766 18.2418 15.6289 18.1599 15.5021C18.0779 15.3752 17.9611 15.2747 17.8235 15.2126C17.6859 15.1504 17.5333 15.1292 17.384 15.1515C17.2346 15.1738 17.0949 15.2387 16.9814 15.3383L12.2671 19.4476C12.1833 19.5212 12.1162 19.6119 12.0701 19.7135C12.024 19.8151 12.0001 19.9253 12 20.0369C12.0029 20.1522 12.0311 20.2655 12.0827 20.3687C12.1343 20.472 12.208 20.5625 12.2986 20.634L17.0129 24.3819C17.1263 24.4756 17.2637 24.5357 17.4096 24.5551C17.5555 24.5745 17.7038 24.5526 17.8379 24.4919Z" fill="white"/>
+              <path d="M28.1621 21.5062C28.0284 21.5699 27.9154 21.6701 27.8362 21.7952C27.757 21.9203 27.7147 22.0652 27.7143 22.2133L27.7143 24.5705L21.4286 24.5705C21.2202 24.5705 21.0203 24.6533 20.873 24.8006C20.7256 24.948 20.6429 25.1478 20.6429 25.3562L20.6429 26.9276C20.6429 27.136 20.7256 27.3359 20.873 27.4832C21.0203 27.6306 21.2202 27.7133 21.4286 27.7133L27.7143 27.7133L27.7143 30.0705C27.7145 30.2215 27.7582 30.3692 27.8401 30.496C27.9221 30.6228 28.0389 30.7233 28.1765 30.7855C28.3141 30.8477 28.4667 30.8689 28.616 30.8466C28.7654 30.8243 28.9051 30.7594 29.0186 30.6598L33.7329 26.5505C33.8167 26.4769 33.8838 26.3862 33.9299 26.2846C33.976 26.183 33.9999 26.0728 34 25.9612C33.9971 25.8458 33.9689 25.7325 33.9173 25.6293C33.8657 25.5261 33.792 25.4356 33.7014 25.3641L28.9871 21.6162C28.8737 21.5225 28.7363 21.4624 28.5904 21.443C28.4445 21.4235 28.2962 21.4454 28.1621 21.5062Z" fill="white"/>
+            </svg>
 
           </a>
-          <a href="#view-catalog" class="tab-link">
-            <i class="icon f7-icons">money_dollar</i>
+          <a href="#view-home" class="tab-link">
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path d="M23 5.48794C23 4.63703 22.662 3.82098 22.0603 3.2193C21.4586 2.61762 20.6426 2.2796 19.7917 2.2796H4.20833C3.78277 2.27925 3.36142 2.36388 2.969 2.52853C2.57658 2.69318 2.22099 2.93454 1.92308 3.23844C1.8716 3.27436 1.82846 3.32094 1.79658 3.37502C1.28254 3.95878 0.999288 4.71011 1 5.48794V17.4046C1.03371 18.2814 1.34553 19.1248 1.89034 19.8126C2.43515 20.5005 3.18469 20.9972 4.0305 21.2308L14.2596 23.6334C14.4911 23.6887 14.7283 23.717 14.9663 23.7177C15.5362 23.7245 16.0912 23.5362 16.5393 23.1842C16.8509 22.9294 17.0996 22.6062 17.2662 22.2398C17.4328 21.8734 17.5128 21.4736 17.5 21.0713V18.7796V12.186C17.4988 11.3334 17.2188 10.5046 16.7025 9.826C16.1863 9.14742 15.4623 8.65634 14.6409 8.42769L4.718 5.69144C4.63103 5.66736 4.54965 5.62639 4.47851 5.57086C4.40737 5.51534 4.34786 5.44634 4.30339 5.36782C4.25891 5.2893 4.23034 5.20278 4.2193 5.11321C4.20826 5.02365 4.21497 4.93278 4.23904 4.84581C4.26312 4.75884 4.30409 4.67746 4.35962 4.60632C4.41514 4.53518 4.48414 4.47567 4.56266 4.4312C4.64118 4.38672 4.7277 4.35815 4.81726 4.34711C4.90683 4.33607 4.99769 4.34278 5.08467 4.36685C5.08467 4.36685 7.97125 5.16435 8.293 5.25235C8.31238 5.25785 8.33244 5.26063 8.35259 5.2606H19.7908C19.9731 5.2606 20.148 5.33304 20.2769 5.46197C20.4058 5.5909 20.4783 5.76577 20.4783 5.9481C20.4783 6.13044 20.4058 6.30531 20.2769 6.43424C20.148 6.56317 19.9731 6.6356 19.7908 6.6356H14.9929C14.9374 6.63549 14.8838 6.65551 14.8419 6.69196C14.8001 6.72841 14.7729 6.7788 14.7654 6.83379C14.7579 6.88877 14.7706 6.94461 14.8011 6.99094C14.8317 7.03726 14.878 7.07093 14.9315 7.08569L15.0103 7.10677C16.0543 7.39688 16.9829 8.00303 17.6687 8.84202C17.6909 8.8691 17.7189 8.89082 17.7506 8.90558C17.7823 8.92034 17.817 8.92776 17.852 8.92727H19.7917C19.974 8.92727 20.1489 8.9997 20.2778 9.12863C20.4067 9.25757 20.4792 9.43243 20.4792 9.61477C20.4792 9.79711 20.4067 9.97197 20.2778 10.1009C20.1489 10.2298 19.974 10.3023 19.7917 10.3023H18.8402C18.8046 10.3024 18.7696 10.3108 18.7378 10.3267C18.706 10.3426 18.6783 10.3656 18.6568 10.3939C18.6355 10.4231 18.6215 10.457 18.616 10.4927C18.6104 10.5284 18.6134 10.565 18.6248 10.5993C18.7932 11.1111 18.8801 11.6463 18.8823 12.1851V18.5495C18.8823 18.6103 18.9065 18.6686 18.9495 18.7116C18.9924 18.7545 19.0507 18.7787 19.1115 18.7787H19.7917C20.6426 18.7787 21.4586 18.4407 22.0603 17.839C22.662 17.2373 23 16.4213 23 15.5704V5.48794ZM15.2083 16.0296C15.2083 16.3922 15.1008 16.7467 14.8994 17.0481C14.6979 17.3496 14.4116 17.5846 14.0766 17.7234C13.7416 17.8621 13.373 17.8984 13.0173 17.8277C12.6617 17.757 12.335 17.5824 12.0786 17.326C11.8222 17.0696 11.6476 16.7429 11.5769 16.3873C11.5062 16.0316 11.5425 15.663 11.6812 15.328C11.82 14.993 12.055 14.7067 12.3565 14.5052C12.6579 14.3038 13.0124 14.1963 13.375 14.1963C13.8612 14.1963 14.3275 14.3894 14.6714 14.7332C15.0152 15.0771 15.2083 15.5434 15.2083 16.0296Z" fill="#C4CFD7"/>
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="22" height="22" fill="white" transform="translate(1 2)"/>
+                </clipPath>
+              </defs>
+            </svg>
 
           </a>
-          <a href="#view-settings" class="tab-link">
-            <i class="icon f7-icons">person_fill</i>
+          <a href="#view-home" class="tab-link">
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 12.75C14.6234 12.75 16.75 10.6234 16.75 8C16.75 5.37665 14.6234 3.25 12 3.25C9.37665 3.25 7.25 5.37665 7.25 8C7.25 10.6234 9.37665 12.75 12 12.75Z" fill="#C4CFD7"/>
+              <path d="M12 13.75C10.0115 13.7521 8.1051 14.543 6.69904 15.949C5.29297 17.3551 4.50212 19.2615 4.5 21.25C4.5 21.3826 4.55268 21.5098 4.64645 21.6036C4.74021 21.6973 4.86739 21.75 5 21.75H19C19.1326 21.75 19.2598 21.6973 19.3536 21.6036C19.4473 21.5098 19.5 21.3826 19.5 21.25C19.4979 19.2615 18.707 17.3551 17.301 15.949C15.8949 14.543 13.9885 13.7521 12 13.75Z" fill="#DFE6EA"/>
+            </svg>
+
           </a>
         </div>
       </div>
+      <div class="navbar" style="height:139px; background: #ffffff; z-index: 9999;">
 
-      <!-- Your main view/tab, should have "view-main" class. It also has "tab-active" class -->
-      <div id="view-home" class="view view-main view-init tab tab-active" data-url="/">
-        <!-- Home page will be loaded here dynamically from / route -->
+        <div class="navbar-inner sliding header-block" style="">
+          <div class="left" style="display: flow-root">
+            <h2 class="title-head"><small>$</small>17,783</h2>
+            <div class="subtitle-head"><span class="text-color-green">+$728 (24%)</span> 24 hrs</div>
+          </div>
+          <div class="right"  style="margin-top:7px; margin-right:6px;">
+            <div class="button-icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.05191 14.605C6.07128 15.1935 7.35685 14.8372 7.95935 13.8259L4.27287 11.6975C3.6983 12.725 4.03255 14.0164 5.05191 14.605Z" fill="#6B7D97"/>
+                <path d="M12.6977 13.0054L12.6292 10.4152C12.6192 9.98112 12.731 9.56163 12.9487 9.1846L13.3921 8.41658C14.3193 6.81073 14.1545 4.74202 12.8985 3.40244L13.1484 2.96956C13.4789 2.39704 13.2842 1.67018 12.7116 1.33964C12.1391 1.00909 11.4123 1.20385 11.0817 1.77637L10.8318 2.20926C9.1076 1.80958 7.25035 2.5433 6.32321 4.14916L5.79917 5.05681C5.5815 5.43384 5.27414 5.74047 4.89321 5.94877L2.61574 7.18461C2.1827 7.41868 1.91075 7.85747 1.90253 8.35543C1.89431 8.85338 2.15631 9.30255 2.57523 9.54441L10.6464 14.2043C11.0793 14.4542 11.5853 14.4485 12.0124 14.1924C12.4535 13.9443 12.7115 13.4975 12.6977 13.0054Z" fill="#6B7D97"/>
+              </svg>
+              <div class="red-dot"></div>
+            </div>
+          </div>
+          <div class="header-block-nav">
+            <ul class="header-tabs">
+              <li><a href="#view-home" class="tab-link tab-link-active">Wallets</a></li>
+              <li><a href="#view-home2"class="tab-link">Activity</a></li>
+              <li><a href="#">Market</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Add token</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-bg"></div>
       </div>
 
-      <!-- Catalog View -->
+      <div id="view-home" class="view view-main view-init tab tab-active" data-name="home" data-url="/">
+      </div>
       <div id="view-home2" class="view view-init tab" data-name="home2" data-url="/home2/">
-        <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
-      </div>
-
-    </div>
-
-
-    <!-- Popup -->
-    <div class="popup" id="my-popup">
-      <div class="view">
-        <div class="page">
-          <div class="navbar">
-            <div class="navbar-bg"></div>
-            <div class="navbar-inner">
-              <div class="title">Popup</div>
-              <div class="right">
-                <a href="#" class="link popup-close">Close</a>
-              </div>
-            </div>
-          </div>
-          <div class="page-content">
-            <div class="block">
-              <p>Popup content goes here.</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-
-    <!-- Login Screen -->
-    <div class="login-screen" id="my-login-screen">
-      <div class="view">
-        <div class="page">
-          <div class="page-content login-screen-content">
-            <div class="login-screen-title">Login</div>
-            <div class="list">
-              <ul>
-                <li class="item-content item-input">
-                  <div class="item-inner">
-                    <div class="item-title item-label">Username</div>
-                    <div class="item-input-wrap">
-                      <input type="text" name="username" placeholder="Your username" value="{{username}}" @input="updateUsername">
-
-                    </div>
-                  </div>
-                </li>
-                <li class="item-content item-input">
-                  <div class="item-inner">
-                    <div class="item-title item-label">Password</div>
-                    <div class="item-input-wrap">
-                      <input type="password" name="password" placeholder="Your password" value="{{password}}" @input="updatePassword">
-
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="list">
-              <ul>
-                <li>
-                  <a href="#" class="item-link list-button login-button" @click="alertLoginData">Sign In</a>
-
-                </li>
-              </ul>
-              <div class="block-footer">Some text about login information.<br>Click "Sign In" to close Login Screen</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="shape">
+      <defs>
+        <linearGradient id="header-shape-gradient"  x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="var(--color-bot)" />
+          <stop offset="70%" stop-color="var(--color-mid)" />
+          <stop offset="95%" stop-color="var(--color-stop)" />
+        </linearGradient>
+        <linearGradient id="header-shape-gradient2"  x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="var(--color-bot)" />
+          <stop offset="70%" stop-color="var(--color-mid)" />
+          <stop offset="95%" stop-color="var(--color-stop)" />
+        </linearGradient>
+      </defs>
+    </svg>
 
   </div>
 </template>
@@ -111,31 +125,6 @@
   export default {
     data() {
       return {
-        user: {
-          firstName: 'John',
-          lastName: 'Doe',
-        },
-        // Login screen demo data
-        username: '',
-        password: '',
-        // Demo products for Catalog section
-        products: [
-          {
-            id: '1',
-            title: 'Apple iPhone 8',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempora similique reiciendis, error nesciunt vero, blanditiis pariatur dolor, minima sed sapiente rerum, dolorem corrupti hic modi praesentium unde saepe perspiciatis.'
-          },
-          {
-            id: '2',
-            title: 'Apple iPhone 8 Plus',
-            description: 'Velit odit autem modi saepe ratione totam minus, aperiam, labore quia provident temporibus quasi est ut aliquid blanditiis beatae suscipit odio vel! Nostrum porro sunt sint eveniet maiores, dolorem itaque!'
-          },
-          {
-            id: '3',
-            title: 'Apple iPhone X',
-            description: 'Expedita sequi perferendis quod illum pariatur aliquam, alias laboriosam! Vero blanditiis placeat, mollitia necessitatibus reprehenderit. Labore dolores amet quos, accusamus earum asperiores officiis assumenda optio architecto quia neque, quae eum.'
-          },
-        ]
       };
     },
     methods: {
