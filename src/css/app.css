@@ -266,6 +266,7 @@ body {
   height:28px;
   overflow:hidden !important;
   margin-top:2px;
+  width:100px !important;
 }
 
 .sparkline-wrap svg {
@@ -347,53 +348,6 @@ body {
   line-height: 40px;
   height: 40px;
 }
-
-.demo-swiper .swiper-slide {
-  font-size: 25px;
-  font-weight: 300;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  color: #000;
-}
-.demo-swiper .swiper-slide {
-  box-sizing: border-box;
-  border: 1px solid #ddd;
-  background: #fff;
-}
-.demo-swiper {
-  margin: 0px 0 35px;
-  font-size:0.9em;
-  height: 200px;
-}
-
-.demo-swiper .row {
-  width: 100%;
-  padding: 0px 10px;
-}
-
-.demo-swiper .finstats {
-  padding:0px;
-  font-size:0.7em;
-  margin:5px;
-}
-.demo-swiper.demo-swiper-auto .swiper-slide {
-  width: 85%;
-}
-.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(2n) {
-  width: 70%;
-}
-.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(3n) {
-  width: 30%;
-}
-
-.demo-swiper h3, .demo-swiper h2 {
-  margin:0px;
-  padding: 0px;
-}
-
-
 .text-color-red {
   color: #E03838 !important;
 }
@@ -582,14 +536,16 @@ body {
 }
 .item-waller-subline {
   display: flex;
+  justify-content: flex-start;
+}
+.item-waller-subline > div:last-child {
+  margin-right:0px;
 }
 .item-waller-subline > div {
-  margin-right:10px;
+  margin-right:7px;
 }
 
-
 .block-strong .block-title {
-  margin:0px;
   padding:16px 14px 0px 14px;
   font-family: Manrope, sans-serif;
   font-style: normal;
@@ -598,7 +554,7 @@ body {
   line-height: 150%;
   letter-spacing: -0.02em;
   color: #2F4858;
-  margin-bottom: 14px;
+  margin: 0px 0px 14px;
 }
 .fab.fab-extended.fab-center-bottom {
   margin-left:-10px;
@@ -626,6 +582,7 @@ body {
   margin-top:50px;
   padding: 0px;
   border-radius: 15px;
+  overflow-y:auto;
 }
 
 .popup.coinpopup:before {
@@ -634,14 +591,11 @@ body {
 
 .swipehandler {
   display: block;
-  background: #ffffff;
   width: 100%;
   text-align: center;
   content: "";
   height: 25px;
-  background-image: url("data:image/svg+xml,%3Csvg width='35' height='5' viewBox='0 0 35 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='35' height='5' rx='2.5' fill='%23E9E9E9'/%3E%3C/svg%3E%0A");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: #ffffff url("data:image/svg+xml,%3Csvg width='35' height='5' viewBox='0 0 35 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='35' height='5' rx='2.5' fill='%23E9E9E9'/%3E%3C/svg%3E%0A") no-repeat center;
 }
 .popup.coinpopup .popup-body {
   background: #F9F9F9;
